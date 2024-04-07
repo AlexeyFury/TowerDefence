@@ -319,8 +319,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d86c0c25311566439266d6994a0c2dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  units: []
 --- !u!114 &53945433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16781,8 +16779,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d86c0c25311566439266d6994a0c2dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  units: []
 --- !u!114 &304385827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16896,9 +16892,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4643f5d1efdb7544a8c365fc326ce2b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0}
-  type: 0
-  touchTime: 0
 --- !u!114 &481543342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18841,11 +18834,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1211331673}
+  - component: {fileID: 1211331679}
   - component: {fileID: 1211331678}
   - component: {fileID: 1211331677}
   - component: {fileID: 1211331676}
   - component: {fileID: 1211331675}
-  - component: {fileID: 1211331679}
   m_Layer: 0
   m_Name: Unit (1)
   m_TagString: Unit
@@ -19070,6 +19063,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092b09b6fc241b44c825d2107728d1fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: id2
+  entityData:
+    id: 
+    Name: 
+    type: 
+    MoveSpeed: 0
+    AttackSpeed: 0
+    Health: 0
+    Durability: 0
+    Vulnerability: 0
 --- !u!1 &1564533846
 GameObject:
   m_ObjectHideFlags: 0
@@ -19445,8 +19448,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d86c0c25311566439266d6994a0c2dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  units: []
 --- !u!61 &1774766337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19617,8 +19618,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d86c0c25311566439266d6994a0c2dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  units: []
 --- !u!114 &2091004241
 MonoBehaviour:
   m_ObjectHideFlags: 0
