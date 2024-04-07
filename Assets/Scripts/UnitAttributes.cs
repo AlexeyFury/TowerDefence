@@ -18,14 +18,16 @@ public class EntityData
     public int Vulnerability;
 
 
-    EntityData(string Id)
-    {
+    EntityData(string Id) {
         id = Id;
 
         getConfig(id);
     }
     private void getConfig(string id)
     {
+        
+    }
+}
 
     }
 }
@@ -38,28 +40,21 @@ public class EntityList
 }
 public class ConfigApi : MonoBehaviour
 {
-    private EntityList entityList = null;
-    public void Start()
-    {
-        string fileName = "config.json";
-        string path = Path.Combine(Application.dataPath, "Scripts", fileName);
-
-        if (File.Exists(path))
+        public void Start()
         {
-            string json = File.ReadAllText(path).Trim();
-            entityList = JsonConvert.DeserializeObject<EntityList>(json) ??
+            string fileName = "config.json";
+            string path = Path.Combine(Application.dataPath, "Scripts", fileName);
+
+            if (File.Exists(path))
+            {
+                string json = File.ReadAllText(path).Trim();
+            EntityList entityList = JsonConvert.DeserializeObject<EntityList>(json) ??
                                     throw new InvalidOperationException(
                                         "Failed to deserialize json to EntityList object.");
+            }
+            else
+            {
+                Debug.Log("File " + fileName + " not found.");
+            }
         }
-        else
-        {
-            Debug.Log("File " + fileName + " not found.");
-        }
-    }
-
-    public EntityData GetConfig(string id)
-    {
-        ;
-    }
-
 }
