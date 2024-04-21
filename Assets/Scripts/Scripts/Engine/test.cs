@@ -4,15 +4,13 @@ using System.IO;
 using System;
 using UnityEngine;
 
-
-
 public class UnitType : MonoBehaviour
 {
     [SerializeField]
-    private string id;
+    public string id;
     private EntityList entityList;
     [SerializeField]
-    private EntityData entityData;
+    public EntityData entityData;
 
     public void Start()
     {
