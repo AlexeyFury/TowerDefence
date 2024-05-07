@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: b214de25aa198574baa197de4801d498
+=======
+guid: 73502ce9a509fff4b9bfaf6e28c6c2a2
+>>>>>>> Stashed changes
 labels:
 - NuGetForUnity
 PluginImporter:
